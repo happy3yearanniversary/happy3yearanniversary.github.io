@@ -138,13 +138,6 @@ $('document').ready(function(){
 
 	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
-		$(this).fadeOut('slow').delay(2000).promise().done(function(){
-			$('#light_candle').fadeIn('fast');
-		});
-	});
-
-	$('#light_candle').click(function(){
-		$('.fuego').fadeIn('slow');
 		$(this).fadeOut('slow').promise().done(function(){
 			$('#wish_message').fadeIn('slow');
 		});
