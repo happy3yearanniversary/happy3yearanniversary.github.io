@@ -1065,7 +1065,7 @@ audio {
 	33%{
 		transform:translate(0px,0px);
 		transform:rotate(10deg);
-		/*-webkit-transform:scale(1.5);*/
+		-webkit-transform:scale(1.5);
 	}
 	66% {
 		transform:translate(0px,100px);
@@ -1275,16 +1275,35 @@ audio {
 	display: none;
 }
 
-.cake-cover {
-	margin-top: 50px;
+.cake{
+  position:absolute;
+  display:none;
+ // top:80%; 
+  left:43%;
+  margin-top: 220px;
+  width:@D; height:@D;
 }
+ 
+.cake:after{
+  background:rgba(255,255,255,1);
+  border-radius:@D;
+  content:"";
+  position:absolute;
+  bottom:0; left:0;
+  width:@D; height:@D/5;
+}
+
+.cake:before{
+
+}
+
 .message {
 	margin-top: 200px;
 	display: none;
 }
 .message p {
 	font-family: 'Signika', sans-serif;
-	font-size: 30px;
+	font-size: 50px;
 	text-transform: uppercase;
 	color: #C4515C;
 	text-shadow: 2px 2px 2px #FFF;
